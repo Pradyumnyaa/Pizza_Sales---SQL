@@ -76,7 +76,6 @@ Group By O.date
 -----------------------------------------------------------------------------------------------------------------------------
 --Question 9> Determine the top 3 most ordered pizza types based on revenue?
 
-
 Select Top 3 PT.name, Sum(OD.Quantity*P.Price) as Revenue
 From order_details OD Inner Join pizzas P
 ON OD.pizza_id=P.pizza_id Inner Join pizza_types PT
